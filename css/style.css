@@ -55,6 +55,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: hsl(235, 45%, 61%);
+  padding: 0;
   cursor: pointer;
 }
 .header__list__item:hover,
@@ -63,6 +64,86 @@ body {
 }
 .header__list__item.selected {
   color: #ffffff;
+}
+/* Time blocks */
+.time-block {
+  border-radius: 15px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+.time-block__text {
+  border-radius: 15px;
+  background: hsl(235, 46%, 20%);
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 25px;
+}
+.time-block__text:hover {
+  background: hsl(235, 42%, 34%);
+  cursor: pointer;
+}
+.time-block__text__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+.time-block__text__time {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+}
+.time-block__text__previous {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+}
+.time-block__text__button {
+  grid-column: 2;
+  grid-row: 1;
+  background: transparent;
+  border: none;
+  justify-self: end;
+  padding: 0;
+  cursor: pointer;
+}
+/* Specifc time blocks */
+.work-time {
+  background: hsl(15, 100%, 70%) no-repeat url(../images/icon-work.svg);
+  background-position: top -10px right 25px;
+}
+.play-time {
+  background: hsl(195, 74%, 62%) no-repeat url(../images/icon-play.svg);
+  background-position: top -5px right 25px;
+}
+.study-time {
+  background: hsl(348, 100%, 68%) no-repeat url(../images/icon-study.svg);
+  background-position: top -10px right 25px;
+}
+.exercise-time {
+  background: hsl(145, 58%, 55%) no-repeat url(../images/icon-exercise.svg);
+  background-position: top 0px right 25px;
+}
+.social-time {
+  background: hsl(264, 64%, 52%) no-repeat url(../images/icon-social.svg);
+  background-position: top -10px right 25px;
+}
+.self-time {
+  background: hsl(43, 84%, 65%) no-repeat url(../images/icon-self-care.svg);
+  background-position: top -10px right 25px;
 }
 /* Attribution section */
 .attribution {
